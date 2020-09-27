@@ -1,0 +1,227 @@
+@import url(//brick.a.ssl.fastly.net/Roboto:200,300,400,500,700,900);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", san-serif;
+}
+
+/*------------ NAVBAR --------------*/
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul{
+  display: flex;
+  justify-content: flex-end;
+  max-height: 50px;
+  list-style-type: none;
+  background-color: #333;
+}
+
+@media screen and (max-width: 480px) {
+  #navbar ul {
+    justify-content: center;
+  }
+  #navbar li:first-child {
+    border-left: 1px solid #bbb;
+  }
+}
+
+#navbar li {
+  float: left;
+  border-right: 1px solid #bbb;
+  padding: 15px 20px;
+}
+
+#navbar a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar li:hover {
+  background-color: #111;
+}
+
+/*------------ WELCOME SECTION --------------*/
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: ea736a ;
+  background-image: linear-gradient(to bottom right, #39809b, #ebaa5d);
+  background-image: url(https://docs.google.com/uc?export=download&id=1m0sPJTrguB4SeTghRytVU7NOpLKcMsWO);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: ghostWhite;
+}
+
+/* opacity background, but not responsive */
+
+#hello {
+  background-color: rgb(248, 248, 255, 0.7);
+  border: 0 solid ghostwhite;
+  border-radius: 3px;
+  color: #333;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 60px;
+}
+
+h1 {
+  font-size: 5vw;
+  line-height: 2.0;
+}
+
+p {
+  font-size: 2vw;
+  line-height: 2.0;
+ }
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 20px;
+  }
+  #hello {
+    padding: 30px 20px;
+  }
+}
+
+/*------------ PROJECTS--------------*/
+
+#projects {
+  text-align: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #466567;
+}
+
+h2 {
+  padding: 75px;
+  font-size: 3vw;
+  color: ghostWhite;
+}
+
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  flex: 1;
+  max-width: 1500px;
+}
+
+.project-grid a {
+  background-color: #ea736a;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-img {
+  width: 100%;
+  flex: 60%;
+}
+
+h3 {
+  background-color: #1D2B2B;
+  color: ghostWhite;
+  padding: 30px 10px;
+  font-weight: lighter;
+}
+
+.allprojects {
+  padding: 100px;
+}
+
+.all {
+  text-decoration: none;
+  font-size: 2vw;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: rgba(248, 248, 255, 1);
+	brackground-color: transparent;
+	border: 3px solid rgba(248, 248, 255, 1);
+	border-radius: 100px;
+  padding: 20px 50px;
+	background-size: 200% 100%;	
+	background-image: linear-gradient(to right, transparent 50%, rgba(248, 248, 255, 1) 50%);
+	transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+}
+
+@media screen and (max-width: 900px) {
+  .all {
+    font-size: 20px;
+  }
+}
+.all:hover {
+  color:rgba(70, 101, 103, 1);
+	background-color:rgba(248, 248, 255, 1);
+	background-position: -100% 100%;}
+
+/*------------ FOOTER--------------*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #323339;
+  text-align: center;
+  min-height: 50vh;
+  color: ghostWhite;
+  width: 100%;
+  flex: 1;
+}
+
+footer p {
+  margin-bottom: 50px;
+}
+
+footer span {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+footer span a {
+  margin: 20px;
+  padding: 5px;
+  border: 0px solid black;
+  border-radius: 90%;
+  filter: invert(1);
+}
+
+@media screen and (max-width: 600px) {
+  footer span img {
+   max-width: 100%;
+  }
+}
